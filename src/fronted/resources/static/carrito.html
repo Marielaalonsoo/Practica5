@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online - Carrito</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Carrito de compra</h1>
+    <p>Resumen de productos seleccionados</p>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="carrito.html">Carrito</a>
+    <a href="contacto.html">Contacto</a>
+</nav>
+
+<main>
+    <section>
+        <h2>Resumen del carrito</h2>
+        <p>Productos que has añadido a tu carrito:</p>
+
+        <table>
+            <thead>
+            <tr>
+                <th>ID artículo</th>
+                <th>Cantidad</th>
+                <th>Precio unitario</th>
+                <th>Coste</th>
+                <th>Borrar</th>
+            </tr>
+            </thead>
+
+            <tbody id="tabla-carrito">
+            </tbody>
+        </table>
+
+        <h3 id="total-carrito">Total: 0 €</h3>
+
+        <button onclick="cargarCarrito()">Actualizar carrito</button>
+        <button onclick="borrarCarrito()">Borrar carrito entero</button>
+    </section>
+</main>
+
+<script src="carrito.js"></script>
+</body>
+</html>
